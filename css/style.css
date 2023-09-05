@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+.container .get-repos {
+    padding: 17px;
+    display: flex;
+    background-color: #EEE;
+}
+
+.container .get-repos input {
+    width: 100%;
+    padding: 15px 20px;
+    height: 54px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 6px 0 6px 0;
+    transition: 0.4s ease-in-out;
+}
+
+.container .get-repos input:focus {
+    outline: 0.3px solid #228609;
+    border-radius: 0 6px 0 6px;
+}
+
+.container .get-repos .get-btn {
+    background-color: #009688;
+    width: 147px;
+    user-select: none;
+    color: #fff;
+    margin-left: 10px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px 0 6px 0;
+}
+
+.container .get-repos .get-btn:active {
+    background-color: #34d40b;
+}
+
+.container .show-data {
+    background-color: #E0E0E0;
+    padding: 20px;
+}
+.container .show-data .repo-box {
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+}
+.container .show-data .repo-box:not(:last-child) {
+    margin-bottom: 8px;
+}
+.container .repo-name {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 90%;
+}
+.container .repo-box .created,
+.container .repo-box .updatedAt {
+    color: rgba(255, 115, 0, 0.63);
+    font-size: 16px;
+    padding: 7px 0;
+    border-bottom: 1px solid #ebe8e8;
+
+}
+.container .repo-box .visibility {
+    padding: 7px 0;
+}
+.container .show-data .repo-box a ,
+.container .show-data .repo-box span {
+    float: right;
+    margin-left: 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+    padding: 6px;
+}
+@media (max-width: 555px) {
+    .container .show-data .repo-box a ,
+    .container .show-data .repo-box span {
+        float: none;
+        margin: 6px 0;
+        display: block;
+}
+}
+.container .show-data .repo-box a {
+    text-decoration: none;
+    background-color: #5911ccbc;
+}
+.container .show-data .repo-box span {
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.container .show-data .repo-box .watch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #607D8B;
+    margin: 9px 0;
+}
+.container .show-data .repo-box span i {
+    color: #FFEB3B;
+}
+.container .lang {
+    font-size: 16px;
+    color: #FF9800;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
